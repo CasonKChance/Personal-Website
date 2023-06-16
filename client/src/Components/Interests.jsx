@@ -5,7 +5,7 @@ export default function Interests() {
         Interest and Accomplishments
       </h2>
       <div className="text-center container col-md-8 offset-md-2">
-        <h3 className="mb-3 display-4">Robotics</h3>
+        <h3 className="mb-3 display-4 text-secondary">Robotics</h3>
         <p className="fs-5">
           I started doing Robotics in the fourth grade at a summer camp put on
           at my school where we got to come in and play with Lego Mindstorms all
@@ -21,7 +21,7 @@ export default function Interests() {
           the path that led me to Georgia Tech and I hope to continue to work in
           Robotics for a long time.
         </p>
-        <h3 className="mb-3 display-4">Music</h3>
+        <h3 className="mb-3 display-4 text-secondary">Music</h3>
         <p className="fs-5">
           I have always had a passion for music. Having participated in many
           school musicals and plays from a young age and through High School,
@@ -34,7 +34,7 @@ export default function Interests() {
           of my friends and fraternity brothers. We now play at various shows
           and events throughout the year.
         </p>
-        <h3 className="mb-3 display-4">Eagle Scout</h3>
+        <h3 className="mb-3 display-4 text-secondary">Eagle Scout</h3>
         <p className="fs-5">
           I spent seven years as a member of the Boy Scouts of America
           culminating in achieving the coveted rank of Eagle Scout in 2018.
