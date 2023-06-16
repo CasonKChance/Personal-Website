@@ -9,7 +9,7 @@ export default function Navbar() {
       data-bs-theme="dark"
     >
       <div className="container-fluid">
-        <a className="navbar-brand" href="/home">
+        <a className="navbar-brand" href="/">
           Cason K Chance
         </a>
         <button
@@ -26,7 +26,7 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="/home">
+              <a className="nav-link" href="/">
                 Home
               </a>
             </li>
