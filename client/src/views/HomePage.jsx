@@ -5,14 +5,19 @@ import School from "../Components/School";
 import AboutMe from "../Components/AboutMe";
 import Skills from "../Components/Skills";
 import Interests from "../Components/Interests";
-import MRI_Logo from "../../public/Images/MRI_Logo_RGB.webp";
+
+import mriLogo from "../../public/Images/MRI_Logo_RGB.webp";
+import verandaLogo from "../../public/Images/Veranda_Logo.png";
+import hondaLogo from "../../public/Images/Honda_Logo.jpeg";
+import gtLogo from "../../public/Images/Georgia_Tech_Logo.png";
+import acadLogo from "../../public/Images/Athens_Academy_Logo.png";
 
 export default function HomePage() {
   const jobs = [
     {
       name: "MRI Software",
       jobTitle: "Software Engineering Intern",
-      logo: MRI_Logo,
+      logo: mriLogo,
       relevantInfo: "C# JavaScript SQL Aurelia",
       dates: "May 2022 - November 2022",
       description:
@@ -21,7 +26,7 @@ export default function HomePage() {
     {
       name: "Veranda",
       jobTitle: "Bartender/Marketing Specialist",
-      logo: "../../public/Images/Veranda_Logo.png",
+      logo: verandaLogo,
       relevantInfo: "Employee of the Month: August 2022",
       dates: "March 2022 - Current",
       description:
@@ -30,7 +35,7 @@ export default function HomePage() {
     {
       name: "Phil Hughes Honda",
       jobTitle: "Automotive Technician",
-      logo: "../../public/Images/Honda_Logo.jpeg",
+      logo: hondaLogo,
       dates: "May 2020 - August 2020",
       description:
         "Troubleshot and diagnosed faults with vehicle systems and components using OEM-specific code readers, diagnostic trees and online knowledge bases.",
@@ -40,7 +45,7 @@ export default function HomePage() {
   const education = [
     {
       name: "Georgia Institute of Technology (Undergraduate)",
-      logo: "../../public/Images/Georgia_Tech_Logo.png",
+      logo: gtLogo,
       degree: "Bachelor of Science: Computer Science",
       threads: "Concentrations: Intelligence and People",
       awards: "Faculty Honors: Fall 2022",
@@ -50,7 +55,7 @@ export default function HomePage() {
     },
     {
       name: "Athens Academy",
-      logo: "../../public/Images/Athens_Academy_Logo.png",
+      logo: acadLogo,
       degree: "High School Diploma",
       awards:
         "National Honors Society, Athens Academy Excellence in Mathematics Award",
