@@ -5,13 +5,14 @@ import School from "../Components/School";
 import AboutMe from "../Components/AboutMe";
 import Skills from "../Components/Skills";
 import Interests from "../Components/Interests";
+import MRI_Logo from "../../public/Images/MRI_Logo_RGB.webp";
 
 export default function HomePage() {
   const jobs = [
     {
       name: "MRI Software",
       jobTitle: "Software Engineering Intern",
-      logo: "../../public/Images/MRI_Logo_RGB.webp",
+      logo: MRI_Logo,
       relevantInfo: "C# JavaScript SQL Aurelia",
       dates: "May 2022 - November 2022",
       description:
