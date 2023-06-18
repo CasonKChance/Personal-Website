@@ -1,14 +1,17 @@
-const express = require("express");
+import dotenv from "dotenv";
+if (process.env.NODE_ENV !== "production") {
+  dotenv.config();
+}
+
+import express from "express";
 const app = express();
-const cors = require("cors");
+import cors from "cors";
+import router from "./routes/router.js";
 
-app.use(cors());
-app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
-app.get("/", (req, res) => {
-  res.send("HELLO");
-});
+app.use(cors());
+app.use(router);
+app.use("/", express.static("public"));
 
 app.listen(8080, () => {
   console.log("Port 8080");

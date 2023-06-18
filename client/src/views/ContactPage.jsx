@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -8,6 +9,7 @@ export default function ContactPage() {
     email: "",
     message: "",
   });
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -46,12 +48,11 @@ export default function ContactPage() {
     let response = await fetch("http://localhost:8080/contact", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json;charset=utf-8",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
     });
-    let result = await response.json();
-    alert(result);
+    navigate("/");
   };
 
   return (
@@ -59,7 +60,13 @@ export default function ContactPage() {
       <div className="row mt-5">
         <h1 className="text-center">Contact Me</h1>
         <div className="col-md-6 offset-md-3">
-          <form onSubmit={handleSubmit} className="needs-validation" noValidate>
+          <form
+            onSubmit={(evt) => {
+              handleSubmit(evt);
+            }}
+            className="needs-validation"
+            noValidate
+          >
             <div className="mb-3">
               <label htmlFor="name" className="form-label">
                 Name
