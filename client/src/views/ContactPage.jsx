@@ -45,7 +45,7 @@ export default function ContactPage() {
   const handleSubmit = async (evt) => {
     evt.preventDefault();
 
-    let response = await fetch("http://localhost:8080/contact", {
+    let response = await fetch("http://www.casonkchance.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
