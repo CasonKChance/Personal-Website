@@ -4,15 +4,15 @@ import { SES } from "@aws-sdk/client-ses";
 const router = express.Router();
 
 const ses = new SES({
-  accessKeyId: process.env.ACCESS_KEY_ID_AWS,
-  accessSecretKey: process.env.SECRET_KEY_AWS,
+  accessKeyId: process.env.AWS_SECRET_KEY,
+  accessSecretKey: process.env.AWS_SECRET_KEY,
   region: "us-east-2",
 });
 
 router.post("/contact", async (req, res) => {
   const { name, email, message } = req.body;
   await sesEmail(name, email, message);
-  res.redirect("http://www.casonkchance.com/");
+  res.redirect("http://localhost:5173/");
 });
 
 function sesEmail(name, emailFrom, message) {
