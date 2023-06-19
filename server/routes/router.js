@@ -12,7 +12,8 @@ const ses = new SES({
 router.post("/contact", async (req, res) => {
   const { name, email, message } = req.body;
   await sesEmail(name, email, message);
-  res.redirect("http://localhost:5173/");
+  const redirectURL = "http://localhost:5173/";
+  res.redirect(redirectURL);
 });
 
 function sesEmail(name, emailFrom, message) {
