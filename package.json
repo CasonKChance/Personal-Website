@@ -2,7 +2,7 @@
   "name": "personal-website",
   "version": "1.0.0",
   "description": "Personal Website for Cason Chance",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\" "
