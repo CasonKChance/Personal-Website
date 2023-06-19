@@ -4,7 +4,7 @@ import { SES } from "@aws-sdk/client-ses";
 const router = express.Router();
 
 const ses = new SES({
-  accessKeyId: process.env.SECRET_KEY_AWS,
+  accessKeyId: process.env.ACCESS_KEY_ID_AWS,
   accessSecretKey: process.env.SECRET_KEY_AWS,
   region: "us-east-2",
 });
