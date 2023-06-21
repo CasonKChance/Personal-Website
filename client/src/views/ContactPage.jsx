@@ -45,13 +45,17 @@ export default function ContactPage() {
   const handleSubmit = async (evt) => {
     evt.preventDefault();
 
-    let response = await fetch("http://localhost:8080/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+    await fetch(
+      "https://e64ugx1u2b.execute-api.us-east-2.amazonaws.com/contact",
+      {
+        mode: "no-cors",
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
     navigate("/");
   };
 
