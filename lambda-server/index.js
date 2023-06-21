@@ -18,7 +18,7 @@ export const handler = async (evt) => {
     to: "casonchancewebsite@gmail.com",
     subject: `Name: ${name}`,
     text: `From Contact: ${email} \n ${message}`,
-    html: `<div> ${message} </div>`,
+    html: `<div> <p>From Contact: ${email}</p> <p>${message}</p> </div>`,
   });
 
   return emailProps;
