@@ -11,7 +11,7 @@ export default function Skills() {
       </h3>
       <p className="fs-5 mb-5">
         React | ExpressJS | Node | MongoDB | SSMS | JavaFX | ROS2 | .NET | AWS
-        Route53/SES/API Gateway/IAM/Lambda
+        Route53 / SES / API Gateway / IAM / Lambda
       </p>
       <h3 className="mb-3 display-4">Technologies</h3>
       <p className="fs-5 mb-5">Docker | Git/Github | Figma | Gazebo </p>
