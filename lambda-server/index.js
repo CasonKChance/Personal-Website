@@ -16,9 +16,9 @@ export const handler = async (evt) => {
   let emailProps = await transporter.sendMail({
     from: "casonkchance@gmail.com",
     to: "casonchancewebsite@gmail.com",
-    subject: `Name: ${name}`,
+    subject: `Name: ${name}, Email: ${email}`,
     text: `From Contact: ${email} \n ${message}`,
-    html: `<div> <p>From Contact: ${email}</p> <p>${message}</p> </div>`,
+    html: `<div> ${message} </div>`,
   });
 
   return emailProps;
