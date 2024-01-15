@@ -1,11 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
-export default function Job({ job }) {
+export default function Project({ project }) {
   return (
     <div className="card mb-3 mx-auto shadow" style={{ maxWidth: "1200px" }}>
       <div className="row g-0">
-        <div className="col-md-4">
+        {/* <div className="col-md-4">
           {job.name !== "Phil Hughes Honda" && (
             <img
               src={job.logo}
@@ -21,21 +21,20 @@ export default function Job({ job }) {
               alt="..."
             />
           )}
-        </div>
+        </div> */}
         <div className="col-md-8">
           <div className="card-body">
-            <h3 className="card-title">{job.name}</h3>
-            <h4 className="card-text text-secondary">{job.jobTitle}</h4>
+            <h3 className="card-title">{project.name}</h3>
             <p className="card-text">
-              <small className="text-body-secondary">{job.dates}</small>
+              <small className="text-body-secondary">{project.dates}</small>
               <br />
-              {job.relevantInfo && (
+              {project.technologies && (
                 <small className="text-body-secondary">
-                  {job.relevantInfo}
+                  {project.technologies}
                 </small>
               )}
             </p>
-            <p className="card-text">{job.description}</p>
+            <p className="card-text">{project.description}</p>
           </div>
         </div>
       </div>
