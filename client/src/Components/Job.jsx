@@ -5,23 +5,26 @@ export default function Job({ job }) {
   return (
     <div className="card mb-3 mx-auto shadow" style={{ maxWidth: "1200px" }}>
       <div className="row g-0">
-        <div className="col-md-4">
-          {job.name !== "Phil Hughes Honda" && (
-            <img
-              src={job.logo}
-              className="img-fluid w-100 h-100 rounded float"
-              alt="..."
-            />
-          )}
-          {job.name !== "Freelance Software Development" && <></>}
-          {job.name === "Phil Hughes Honda" && (
-            <img
-              src={job.logo}
-              className="img-fluid w-100 px-3 h-100 rounded float"
-              alt="..."
-            />
-          )}
-        </div>
+        {job.logo ? (
+          <div className="col-md-4">
+            {job.name !== "Phil Hughes Honda" && (
+              <img
+                src={job.logo}
+                className="img-fluid w-100 h-100 rounded float"
+                alt="..."
+              />
+            )}
+            {job.name === "Phil Hughes Honda" && (
+              <img
+                src={job.logo}
+                className="img-fluid w-100 px-3 h-100 rounded float"
+                alt="..."
+              />
+            )}
+          </div>
+        ) : (
+          <></>
+        )}
         <div className="col-md-8">
           <div className="card-body">
             <h3 className="card-title">{job.name}</h3>

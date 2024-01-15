@@ -80,28 +80,28 @@ export default function HomePage() {
       description:
         "Developed a custon accounting app for a private company. Features included data interfacing in a table format, report generation, and direct database interaction.",
       dates: "June 2023 - August 2023",
-      technologies: "React, Electron, Django, SQLite",
+      technologies: "React Electron Django SQLite",
     },
     {
       name: "Campus Recycler",
       description:
         "Created a gamified recycling app for Georgia Tech campus. Features a leaderboard of top monthly users, custom bonuses, and a map with recycling bin locations.",
       dates: "December 2023 - January 2024",
-      technologies: "React-Native, Django, PostgreSQL, AWS (EC2, S3, RDS)",
+      technologies: "React-Native Django PostgreSQL AWS (EC2, S3, RDS)",
     },
     {
       name: "PurpleViz (AIATL Hackathon First Place - Computer Vision for Aero Innovation Challenge",
       description:
         "Formulated and developed an app for scanning airplane foam blocks to check cleanliness using computer vision (CV). Won first place at the AIATL Hackathon for Aero Innovation Challenge.",
       dates: "November 2023",
-      technologies: "React, PostgreSQL, Django, Roboflow API",
+      technologies: "React PostgreSQL Django Roboflow API",
     },
     {
       name: "Heat Check",
       description:
         "Directed a team to create a basketball-centered app that allows users to find courts and find/organize pickup games near them. Features a highly customizable player profile, a leaderboard based on an ELO system, a searching feature for finding and signing up for nearby games and courts.",
       dates: "August 2023 - Current",
-      technologies: "React-Native, Django, SQLite",
+      technologies: "React-Native Django SQLite",
     },
   ];
 

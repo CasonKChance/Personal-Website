@@ -22,7 +22,7 @@ export default function Project({ project }) {
             />
           )}
         </div> */}
-        <div className="col-md-8">
+        <div className="col-md-8 mx-auto">
           <div className="card-body">
             <h3 className="card-title">{project.name}</h3>
             <p className="card-text">
