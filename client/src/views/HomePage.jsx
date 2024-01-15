@@ -5,6 +5,7 @@ import School from "../Components/School";
 import AboutMe from "../Components/AboutMe";
 import Skills from "../Components/Skills";
 import Interests from "../Components/Interests";
+import Project from "../Components/Project";
 
 import mriLogo from "../../public/Images/MRI_Logo_RGB.webp";
 import verandaLogo from "../../public/Images/Veranda_Logo.png";
