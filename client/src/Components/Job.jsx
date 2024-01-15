@@ -25,7 +25,7 @@ export default function Job({ job }) {
         ) : (
           <></>
         )}
-        <div className="col-md-8">
+        <div className="col-md-8 mx-auto">
           <div className="card-body">
             <h3 className="card-title">{job.name}</h3>
             <h4 className="card-text text-secondary">{job.jobTitle}</h4>
