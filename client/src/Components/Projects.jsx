@@ -1,4 +1,4 @@
-export default function Skills() {
+export default function Projects() {
   return (
     <div>
       <h2 className="mt-4 mb-3 display-3 text-decoration-underline">Skills</h2>

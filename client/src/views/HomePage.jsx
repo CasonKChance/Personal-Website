@@ -15,6 +15,16 @@ import acadLogo from "../../public/Images/Athens_Academy_Logo.png";
 export default function HomePage() {
   const jobs = [
     {
+      name: "Freelance Software Development",
+      jobTitle: "Freelance Software Developer",
+      logo: mriLogo,
+      relevantInfo:
+        "React NodeJS AWS ExpressJS MongoDB SQLite Electron Django React-Native PostgreSQL",
+      dates: "May 2023 - January 2024",
+      description:
+        "Engineered custom software solutions for various clients. Built websites, a desktop application and a mobile application for iOS and Android. See projects section for more information.",
+    },
+    {
       name: "MRI Software",
       jobTitle: "Software Engineering Intern",
       logo: mriLogo,
