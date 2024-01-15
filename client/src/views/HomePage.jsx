@@ -126,7 +126,7 @@ export default function HomePage() {
           Projects
         </h2>
         {projects.map((project, i) => (
-          <Project key={i} />
+          <Project key={i} project={project} />
         ))}
       </div>
       <div className="mb-5">
