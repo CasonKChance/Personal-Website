@@ -17,7 +17,6 @@ export default function HomePage() {
     {
       name: "Freelance Software Development",
       jobTitle: "Freelance Software Developer",
-      logo: mriLogo,
       relevantInfo:
         "React NodeJS AWS ExpressJS MongoDB SQLite Electron Django React-Native PostgreSQL",
       dates: "May 2023 - January 2024",

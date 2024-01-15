@@ -14,6 +14,11 @@ export default function Skills() {
         | SQLite | PostgreSQL | JavaFX | Kivy | .NET | AWS Route53 / SES / API
         Gateway / IAM / Lambda / S3 / EC2 / RDS
       </p>
+      <p className="fs-5 mb-5">
+        React | React-Native | ExpressJS | NodeJS | D3 | MongoDB | Django | SSMS
+        | SQLite | PostgreSQL | JavaFX | Kivy | .NET | AWS Route53 / SES / API
+        Gateway / IAM / Lambda / S3 / EC2 / RDS
+      </p>
       <h3 className="mb-3 display-4">Technologies</h3>
       <p className="fs-5 mb-5">Docker | Git/Github | Figma </p>
     </div>
